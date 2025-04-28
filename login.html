@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Styled Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fdfdfd;
+      }
+      .top-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      nav {
+        background-color: #4287f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      nav .home {
+        color: rgb(71, 214, 27);
+        font-size: 20px;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 2px;
+      }
+      .login-card {
+        width: 300px;
+        margin: 40px auto;
+        border: 1px solid #4287f5;
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .login-card-header {
+        background-color: #62f0fc;
+        color: blue;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .login-card form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+      }
+      .login-card input[type="text"],
+      .login-card input[type="password"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .login-card input[type="submit"] {
+        background-color: #4287f5;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        align-self: center;
+        width: 100px;
+      }
+      footer {
+        background-color: #4287f5;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      .content {
+        padding: 20px;
+        padding-bottom: 100px; /* avoid content behind footer */
+      }
+    </style>
+    <script>
+      function validateLogin(event) {
+        event.preventDefault(); // Stop form from submitting normally
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "20211CSD0147" && password === "18012004") {
+          window.location.href = "welcome.html"; // Redirect to welcome.html
+        } else {
+          alert("Invalid username or password. Please try again.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="top-image">
+      <img src="header.png" alt="Top Banner" />
+    </div>
+
+    <nav>
+      <a class="home" href="#">Home</a>
+    </nav>
+
+    <div class="content">
+      <div class="login-card">
+        <div class="login-card-header">Login</div>
+        <form onsubmit="validateLogin(event)">
+          <input
+            type="text"
+            id="username"
+            name="roll"
+            placeholder="username: Roll No."
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password: DDMMYYYY"
+            required
+          />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      Copyright © 2025 Presidency University, All Rights Reserved. Designer,
+      Developer & Maintenance - Ajaz Baig, Section Officer, CoE Dept.
+    </footer>
+  </body>
+</html>

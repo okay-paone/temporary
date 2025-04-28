@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Results</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .top-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      nav {
+        background-color: #4287f5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+      nav .menu {
+        display: flex;
+        gap: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 6px 10px;
+        border-radius: 5px;
+      }
+      nav a.active {
+        background-color: black;
+        color: lime;
+      }
+      .student-details,
+      .student-results {
+        margin: 20px auto;
+        width: 90%;
+        max-width: 1000px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .section-header {
+        background-color: #c7f3fd;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 18px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      td.label {
+        font-weight: bold;
+        text-align: right;
+        width: 30%;
+      }
+      td.data {
+        text-align: left;
+      }
+      .photo {
+        width: 100px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 10px;
+      }
+      .warning {
+        background-color: #f8d7da;
+        color: #721c24;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .result-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .result-row a {
+        color: #4287f5;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      footer {
+        background-color: #4287f5;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-image">
+      <img src="header.png" alt="Top Banner" />
+    </div>
+    <nav>
+      <div class="menu">
+        <a href="welcome.html">Home</a>
+        <a href="#" class="active">Results</a>
+      </div>
+      <a href="login.html" style="color: white">Logout</a>
+    </nav>
+
+    <div class="student-details">
+      <div class="section-header">Student Details</div>
+      <table>
+        <tr>
+          <td class="label">Roll No.</td>
+          <td class="data">2021CSD0147</td>
+          <td rowspan="5" style="text-align: center">
+            <img src="profile.png" alt="Student Photo" class="photo" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Student Name</td>
+          <td class="data">SHASHANK J K</td>
+        </tr>
+        <tr>
+          <td class="label">Father's Name</td>
+          <td class="data">JAIDEV K</td>
+        </tr>
+        <tr>
+          <td class="label">Mother's Name</td>
+          <td class="data">SHAILAJA J K</td>
+        </tr>
+        <tr>
+          <td class="label">School</td>
+          <td class="data">School of Engineering</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="student-results">
+      <div class="section-header">Student Results</div>
+      <div class="warning">
+        If you are unable to view / Download the results, Contact Fee / Library
+        Dept. to release your results
+      </div>
+
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - February, 2025 - End
+          Term</span
+        >
+        <a href="pdfs/Semester 7.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - May, 2024 - End Term</span
+        >
+        <a href="pdfs/Semester 6.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - January, 2024 - End
+          Term</span
+        >
+        <a href="pdfs/Semester 5.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - June, 2023 - End
+          Term</span
+        >
+        <a href="pdfs/Semester 4.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - January, 2023 - End
+          Term</span
+        >
+        <a href="pdfs/Semester 3.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - June / July, 2022 - End
+          Term</span
+        >
+        <a href="pdfs/Semester 2.pdf" download>Click Here</a>
+      </div>
+      <div class="result-row">
+        <span
+          >B.Tech (Computer Science and Technology) - February / March, 2022 -
+          End Term</span
+        >
+        <a href="pdfs/Semester 1.pdf" download>Click Here</a>
+      </div>
+    </div>
+
+    <footer>
+      Copyright © 2025 Presidency University, All Rights Reserved. Designer,
+      Developer & Maintenance - Ajaz Baig, Section Officer, CoE Dept.
+    </footer>
+  </body>
+</html>
